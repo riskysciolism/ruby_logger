@@ -20,7 +20,7 @@ module Logger
         # Start "old" method and print return value if any
         return_value = send(old, *val)
 
-        if !return_value.nil?
+        if return_value
           puts "returns: #{return_value}"
         end
         puts "-----------------------------------------------------------"
